@@ -1,0 +1,155 @@
+.header .container {
+    display: flex;
+    align-items: center;
+    padding: 24px 0;
+}
+
+.header__nav,
+.header__address {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav,
+.header__address,
+.button__list,
+.portfolio,
+.clients__list,
+.team__icons,
+.footer__element {
+    list-style: none;
+}
+
+.header__list,
+.header__address-mail,
+.header__address-tel,
+.portfolio {
+    text-decoration: none;
+}
+
+.header__list {
+    margin-right: 46px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.header__list {
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+
+.header__nav {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+}
+
+.header__list:hover,
+.header__list:active,
+.header__address-mail:hover,
+.header__address-mail:active,
+.header__address-tel:hover,
+.header__address-tel:active {
+    color: var(--accent-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+.header__address-mail:hover .header__mail,
+.header__address-mail:active .header__mail,
+.header__address-tel:hover .header__phone,
+.header__address-tel:active .header__phone {
+    color: var(--accent-color);
+    fill: var(--accent-color);
+    stroke: var(--accent-color);
+}
+
+
+.active-link {
+    position: relative;
+    color: var(--accent-color);
+}
+
+.active-link::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 45px;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__address-tel {
+    margin-left: 50px;
+}
+
+.header__address {
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.header__logo {
+    font-style: var(--secondary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.192;
+    letter-spacing: 0.03em;
+    color: var(--primary-color);
+    text-decoration: none;
+    margin-right: 93px;
+    font-family: var(--secondary-font);
+}
+
+.header__accent {
+    color: var(--accent-color);
+}
+
+.header__logo-accent-studio {
+    color: var(--light-color);
+    font-size: 26px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    font-family: var(--secondary-font);
+}
+
+.header__mail {
+    width: 16;
+    height: 12;
+    fill: var(--second-color);
+    stroke: var(--second-color);
+    padding-right: 10px;
+}
+
+.header__mail:hover,
+.header__mail:active,
+.header__phone:hover,
+.header__phone:active {
+    fill: var(--accent-color);
+    stroke: var(--accent-color);
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: stroke 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.header__address-mail,
+.header__address-tel {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.02em;
+    color: var(--second-color);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    fill: var(--second-color);
+}
