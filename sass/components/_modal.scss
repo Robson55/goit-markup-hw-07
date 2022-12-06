@@ -34,6 +34,7 @@
 .close__btn svg {
     position: relative;
     top: 2px;
+
 }
 
 .is-hidden {
@@ -42,11 +43,11 @@
     pointer-events: none;
 }
 
-.newsletter {
+.newsletter-box {
     margin-left: 70px;
 }
 
-.newsletter__title {
+.newsletter {
     font-weight: 700;
     color: var(--white-color);
     font-size: 14px;
@@ -55,12 +56,12 @@
     padding-bottom: 20px;
 }
 
-.newsletter__contact {
+.newsletter-contact {
     display: block;
     align-items: flex-end;
 }
 
-.newsletter__email {
+.box-email {
     width: 358px;
     height: 50px;
     border-radius: 4px;
@@ -72,7 +73,7 @@
     cursor: text;
 }
 
-.newsletter__btn {
+.news-btn {
     width: 200px;
     height: 50px;
     color: var(--white-color);
@@ -87,7 +88,7 @@
     cursor: pointer;
 }
 
-.newsletter__icon {
+.newsletter-icon {
     color: var(--white-color);
     fill: var(--white-color);
     position: relative;
@@ -127,6 +128,10 @@
     line-height: 1.167;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 1);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
 }
 
 .form__icon {
@@ -134,13 +139,6 @@
     width: 18px;
     height: 18px;
     padding: 12px;
-}
-
-.form__label {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
 }
 
 .form__fieldset input {
@@ -170,7 +168,7 @@
     font-size: 12px;
 }
 
-.label__checkbox {
+.label-checkbox {
     display: flex;
     justify-content: center;
     margin-top: 10px;
@@ -192,7 +190,7 @@
     cursor: pointer;
 }
 
-.modal__button {
+.modal-button {
     display: flex;
     justify-content: center;
 }
@@ -218,10 +216,10 @@
     border-radius: 2px;
 }
 
-.input:focus,
-.form__label textarea:hover,
-.form__label textarea:focus,
-.form__fieldset input:focus+svg,
+.form__input:focus,
+.form__label input:hover,
+.form__label input:focus,
+.form__fieldset:focus+svg,
 .fieldset__comment:hover,
 .fieldset__comment:focus-within {
     fill: var(--accent-color);
