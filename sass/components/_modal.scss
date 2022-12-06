@@ -100,7 +100,7 @@
     font-weight: 700;
     font-size: 20px;
     text-align: center;
-    color: var(--primary-color);
+    color: green;
 }
 
 .form__fieldset {
@@ -219,7 +219,7 @@
 .form__input:focus,
 .form__label input:hover,
 .form__label input:focus,
-.form__fieldset:focus+svg,
+.form__fieldset input:focus+svg,
 .fieldset__comment:hover,
 .fieldset__comment:focus-within {
     fill: var(--accent-color);
@@ -229,6 +229,13 @@
 .form__fieldset input:focus-visible,
 .fieldset__comment textarea:focus-visible {
     outline: none;
+}
+
+.label__checkbox {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-size: 14px;
 }
 
 .label__checkbox:checked {
@@ -254,4 +261,8 @@
     display: none;
     opacity: 0;
     fill: var(--accent-color);
+}
+
+.checkbox__legal {
+    margin: 0 4px;
 }
