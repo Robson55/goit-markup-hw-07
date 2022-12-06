@@ -1,12 +1,13 @@
 @import './utils/variables.scss';
 
-@import './layout/header';
-@import './layout/hero';
-@import './layout/advantages';
-@import './layout/services';
-@import './layout/team';
-@import './layout/clients';
-@import './layout/footer';
+@import './components/header';
+@import './components/layout/hero';
+@import './components/layout/advantages';
+@import './components/layout/services';
+@import './components/layout/team';
+@import './components/layout/clients';
+@import './components/layout/footer';
+@import './components/layout/portfolio';
 
 @import './components/modal';
 
